@@ -835,7 +835,7 @@ footer {
   display: block;
   text-align: center;
 }
-.checkbox-label::after {
+.checkbox-icon {
   content: '';
 
   display: inline-block;
