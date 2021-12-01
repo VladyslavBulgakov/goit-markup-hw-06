@@ -897,9 +897,8 @@ footer {
   line-height: 1.25;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   background-color: var(--bcg-section-color);
 }
@@ -907,7 +906,12 @@ footer {
 .subscribe-input::placeholder {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+/* .subscribe-input:focus {
+  outline-color: var(--accent-color);
+} */
 
 .submit-subscribe-btn {
   display: flex;
