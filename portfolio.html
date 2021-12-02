@@ -425,5 +425,16 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <!-- ----------------------------------------------------------- -->
+    <script>
+      (() => {
+        document.querySelector('.subcribe-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+          e.currentTarget.reset();
+        });
+      })();
+    </script>
   </body>
 </html>
