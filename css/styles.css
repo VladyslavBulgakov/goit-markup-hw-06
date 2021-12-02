@@ -854,6 +854,8 @@ footer {
   border: 2px solid var(--accent-color);
   background-image: url('../images/icon-check.svg');
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-origin: border-box;
 }
 .checkbox-modal {
