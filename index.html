@@ -140,7 +140,21 @@
                 <a href="#" class="user-agreement"> Условия договора </a>
               </label>
 
-              <button type="submit" class="button-modal">Отправить</button>
+              <button type="submit" class="button-modal">
+                <span>Отправить</span>
+              </button>
+
+              <script>
+                let button = document.querySelector('.button-modal');
+
+                button.onmousemove = e => {
+                  let x = e.pageX - e.target.offsetLeft;
+                  let y = e.pageY - e.target.offsetTop;
+
+                  button.style.setProperty('--x', x + 'px');
+                  button.style.setProperty('--y', y + 'px');
+                };
+              </script>
             </form>
           </div>
         </div>
